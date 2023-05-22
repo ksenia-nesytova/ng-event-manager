@@ -10,7 +10,16 @@ export class CartService {
   constructor() {}
 
     addToCart(product:Product) {
-       this.items.push(product);
+     const index = this.items.findIndex(item => item.id === product.id);
+     if(index > -1 ) {
+       this.items[index].quantity!++;
+     } else {
+       const productInCart: Product = {
+          ...product,
+          quantity: 1,
+        };
+        this.items.push(productInCart);
+       }
      }
 
      getItems() {
