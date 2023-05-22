@@ -28,4 +28,8 @@ export class CartService {
          this.items.splice(index, 1);
        }
      }
+
+     getTotalItems(): number {
+      return this.items.reduce((total, item) => total + item.quantity!, 0);
+  }
 }
