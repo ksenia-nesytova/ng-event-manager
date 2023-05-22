@@ -1,2 +1,4 @@
 <h3>Items added to your shopping cart:</h3>
-<app-product-card  *ngFor="let product of items" [product] = "product">
+<div class="cart-container">
+  <app-product-card  *ngFor="let product of items" [product] = "product"/>
+</div>
