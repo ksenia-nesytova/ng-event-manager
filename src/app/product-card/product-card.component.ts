@@ -18,4 +18,7 @@ export class ProductCardComponent {
   addToCart(product:Product):void {
     this.cartService.addToCart(product);
   }
+  removeFromCart(product:Product):void {
+    this.cartService.removeFromCart(product);
+  }
 }
