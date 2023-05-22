@@ -11,7 +11,6 @@ export class CartService {
 
     addToCart(product:Product) {
        this.items.push(product);
-       console.log(this.items)
      }
 
      getItems() {
@@ -23,10 +22,10 @@ export class CartService {
        return this.items;
      }
 
-     removeItem(product:Product) {
+     removeFromCart(product:Product) {
        const index = this.items.indexOf(product);
        if (index > -1) {
          this.items.splice(index, 1);
-   }
- }
+       }
+     }
 }
