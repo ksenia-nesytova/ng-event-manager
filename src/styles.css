@@ -1,12 +1,56 @@
-/* You can add global styles to this file, and also import other style files */
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
-.flex-container {
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button-default {
+  border: 0;
+  border-radius: 100vmax;
+  padding: .5em 1em;
+  background-color: yellow;
+}
+
+.button-default:hover,
+.button-default:focus,
+.button-default:active {
+  background-color: limegreen;
+
+}
+
+.button-primary {
+
 }
