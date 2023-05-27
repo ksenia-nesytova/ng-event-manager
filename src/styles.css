@@ -30,6 +30,11 @@ li {
 }
 
 .container {
+  padding: 0 50px;
+
+}
+
+.flex-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
