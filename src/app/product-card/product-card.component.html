@@ -1,8 +1,8 @@
 <div class="card">
-  <button (click)="removeFromCart(product)">xxx</button>
+  <button *ngIf="showShoppingCartSection" (click)="removeFromCart(product)">xxx</button>
   <img src="" alt="">
   <h3>{{product.title}}</h3>
   <p>{{product.description}}</p>
   <p>Sold by: {{product.vendor}}</p>
-  <button type="button" name="button" (click)=addToCart(product)>Add to Cart</button>
+  <button type="button" (click)=addToCart(product) class="button-default button-primary">Add to Cart</button>
 </div>
