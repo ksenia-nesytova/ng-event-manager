@@ -54,3 +54,7 @@ li {
 .button-primary {
 
 }
+
+.cart-container .card {
+  width: auto!important;
+}
