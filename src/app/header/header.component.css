@@ -1,0 +1,10 @@
+.nav-primary {
+  width: 80%;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  min-width: 100%;
+  justify-content: space-evenly;
+}
