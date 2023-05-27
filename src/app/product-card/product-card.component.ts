@@ -8,10 +8,10 @@ import { CartService } from '../cart.service';
   styleUrls: ['./product-card.component.css']
 })
 
-
-
 export class ProductCardComponent {
-  @Input() product!: Product;
+  @Input() product!:Product;
+
+  showShoppingCartSection:boolean = false;
 
   constructor(private cartService: CartService) { }
 
