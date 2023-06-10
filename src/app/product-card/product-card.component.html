@@ -1,8 +1,14 @@
-<div class="card">
-  <button *ngIf="showShoppingCartSection" (click)="removeFromCart(product)">xxx</button>
-  <img src="" alt="">
-  <h3>{{product.title}}</h3>
-  <p>{{product.description}}</p>
-  <p>Sold by: {{product.vendor}}</p>
-  <button type="button" (click)=addToCart(product) class="button-default button-primary">Add to Cart</button>
+<div class="card column">
+  <div class="card-inner">
+    <button *ngIf="isCart" (click)="removeFromCart(product)">xxx</button>
+    <img src="../assets/product/listing-image.png" alt="img">
+    <h3>{{product.title}}</h3>
+    <p>{{product.description}}</p>
+    <p>Sold by: {{product.vendor}}</p>
+    <!-- <button *ngIf="!isCart" type="button" (click)=addToCart(product) class="button-default button-primary">Add to Cart</button>
+    <button *ngIf="isCart" type="button" (click)=removeFromCart(product) class="button-default button-primary">Remove from Cart</button> -->
+    <!-- <div *ngIf="!isCart" class="">
+      <button type="button">-</button><span>{{getItemQuantity(product)}}</span><button type="button">+</button>
+    </div> -->
+  </div>
 </div>
