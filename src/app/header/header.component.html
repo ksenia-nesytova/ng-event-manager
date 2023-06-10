@@ -1,17 +1,20 @@
 <header class="header-primary">
-  <div class="container flex-container nav-wrapper">
-    <a href="#"><img src="" alt="LOGO"></a>
-    <nav class="nav-primary">
-      <ul role="list" class="nav-list">
-        <li class="nav-list-item"><a href="#">NavItem01</a></li>
-        <li class="nav-list-item"><a href="#">NavItem02</a></li>
-        <li class="nav-list-item"><a href="#">NavItem03</a></li>
-        <li class="nav-list-item"><a href="#">NavItem04</a></li>
-      </ul>
-    </nav>
-    <button class="button-default button-primary" type="button">
-      <a routerLink="/cart">  Items in cart {{ cartService.getTotalItems() }}
-      </a>
-    </button>
+  <!-- <div class="container flex-container nav-wrapper"> -->
+  <div class="row">
+    <div class="nav-wrapper">
+      <a href="#"><img src="" alt="LOGO"></a>
+      <nav class="nav-primary">
+        <ul role="list" class="nav-list">
+          <li class="nav-list-item"><a href="#">NavItem01</a></li>
+          <li class="nav-list-item"><a href="#">NavItem02</a></li>
+          <li class="nav-list-item"><a href="#">NavItem03</a></li>
+          <li class="nav-list-item"><a href="#">NavItem04</a></li>
+        </ul>
+      </nav>
+      <button class="button-default button-primary" type="button">
+        <a routerLink="/cart">  Items in cart {{ cartService.getTotalItems() }}
+        </a>
+      </button>
+    </div>
   </div>
 </header>
