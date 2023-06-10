@@ -10,8 +10,7 @@ import { CartService } from '../cart.service';
 
 export class ProductCardComponent {
   @Input() product!:Product;
-
-  showShoppingCartSection:boolean = false;
+  @Input() isCart:boolean = false;
 
   constructor(private cartService: CartService) { }
 
@@ -21,4 +20,8 @@ export class ProductCardComponent {
   removeFromCart(product:Product):void {
     this.cartService.removeFromCart(product);
   }
+  getItemQuantity(product:Product) {
+    this.cartService.getItemQuantity(product);
+  }
+
 }

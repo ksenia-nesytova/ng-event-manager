@@ -7,6 +7,8 @@ import { Product } from '../interfaces/Product'
 })
 
 export class ProductListingComponent {
+   isCart: boolean = false;
+
    products: Product[] = [
      {
     id: 632910392,

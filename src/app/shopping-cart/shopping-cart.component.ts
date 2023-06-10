@@ -7,9 +7,12 @@ import { Product } from '../interfaces/Product'
   styleUrls: ['./shopping-cart.component.css']
 })
 export class ShoppingCartComponent {
+
   constructor(public cartService: CartService) { }
 
+  isCart: boolean = true;
   items:Product[] = [];
+
   ngOnInit() {
    this.items = this.cartService.getItems();
  }

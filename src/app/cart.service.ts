@@ -9,7 +9,7 @@ export class CartService {
 
   constructor() {}
 
-    addToCart(product:Product) {
+    addToCart(product:Product): void {
      const index = this.items.findIndex(item => item.id === product.id);
      if(index > -1 ) {
        this.items[index].quantity!++;
@@ -22,16 +22,26 @@ export class CartService {
        }
      }
 
-     getItems() {
+     getItems(): Product[] {
        return this.items;
      }
 
-     clearCart() {
+     getItemQuantity(product:Product): number|undefined {
+       const index = this.items.findIndex(item => item.id === product.id);
+       if(index > -1 ) {
+         return this.items[index].quantity;
+       } else {
+        console.log('No such item in cart')
+         return;
+       }
+     }
+
+     clearCart(): Product[] {
        this.items = [];
        return this.items;
      }
 
-     removeFromCart(product:Product) {
+     removeFromCart(product:Product): void {
        const index = this.items.indexOf(product);
        if (index > -1) {
          this.items.splice(index, 1);
