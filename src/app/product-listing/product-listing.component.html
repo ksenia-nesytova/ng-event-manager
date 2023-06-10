@@ -1,3 +1,14 @@
-<div class="grid-container container">
-  <app-product-card *ngFor="let product of products" [product] = "product"/>
+<div class="row listing-header">
+  <h1>Our Products</h1>
+</div>
+<div class="row">
+  <app-side-nav class="column"></app-side-nav>  <!-- is column -->
+  <div class="column">
+    <div class="row product-grid-row">
+      <app-product-card *ngFor="let product of products" [isCart]="isCart" [product] = "product"/>
+      <app-product-card *ngFor="let product of products" [isCart]="isCart" [product] = "product"/>
+      <app-product-card *ngFor="let product of products" [isCart]="isCart" [product] = "product"/>
+      <app-product-card *ngFor="let product of products" [isCart]="isCart" [product] = "product"/>
+    </div>
+  </div>
 </div>
