@@ -29,7 +29,25 @@ li {
   list-style: none;
 }
 
-.container {
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #f5c542;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 1px;
+  background-color: #f54242;
+  /* float: left; */
+}
+
+
+
+/* .container {
   padding: 0 50px;
 
 }
@@ -40,7 +58,7 @@ li {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-}
+} */
 
 .button-default {
   border: 0;
@@ -55,11 +73,12 @@ li {
   background-color: limegreen;
 
 }
-
+/*
 .button-primary {
 
 }
 
 .cart-container .card {
   width: auto!important;
-}
+  margin-top: 20px;
+} */
