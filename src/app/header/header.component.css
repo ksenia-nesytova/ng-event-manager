@@ -1,22 +1,30 @@
+.header-primary {
+  background-color: grey;
+}
 .nav-wrapper {
-  /* padding: 0 50px; */
-  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  height: 70px;
   background-color: grey;
   width: 100%;
+  margin-left: calc(200px - 49.78px); /* side-nav width - logo width */
+  border-left:  2px solid grey; /* equal to side-nav border-left  */
 }
 
 .nav-primary {
-  /* width: 80%; */
-  margin: 0 auto;
-
+  display: flex;
+  align-items: center;
 }
-
 .nav-list {
   display: flex;
   flex-direction: row;
   min-width: 100%;
-  /* justify-content: space-evenly; */
 }
 .nav-list-item {
-  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.button-nav {
+  align-self: center;
 }
