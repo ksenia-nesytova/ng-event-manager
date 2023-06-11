@@ -1,6 +1,8 @@
-<div class="container cart-wrapper">
-  <h3>Items added to your shopping cart:</h3>
-  <div class="cart-container">
-    <app-product-card [isCart]="isCart" *ngFor="let product of items" [product] = "product"/>
+<div class="row cart-wrapper">
+  <div class="cart-inner">
+    <div class="column cards-wrapper">
+      <h3>Items added to your shopping cart:</h3>
+      <app-product-card [isCart]="isCart" *ngFor="let product of items" [product] = "product"/>
+    </div>
   </div>
 </div>

@@ -1,5 +1,12 @@
-.cart-container {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
+.cart-wrapper {
+  justify-content: center;
+}
+
+/* temporary */
+.cart-inner {
+  width: 80%;
+}
+
+.cards-wrapper {
+  align-items: center;
 }

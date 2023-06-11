@@ -16,3 +16,14 @@
   /* background-color: white; */
   text-align: center;
 }
+
+
+/* styles for cards inside cart */
+/* .card {
+  border: 1px solid black;
+  border-width: 0.5px 1px;
+  min-width: 620px;
+  max-width: 620px;
+  overflow: hidden;
+  height: 320px;
+} */
