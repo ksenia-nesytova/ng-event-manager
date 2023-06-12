@@ -19,11 +19,13 @@
 
 
 /* styles for cards inside cart */
-/* .card {
+.card-in-cart {
   border: 1px solid black;
   border-width: 0.5px 1px;
   min-width: 620px;
   max-width: 620px;
   overflow: hidden;
   height: 320px;
-} */
+  margin: 20px auto 10px;
+
+}
