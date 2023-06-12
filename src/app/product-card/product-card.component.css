@@ -10,11 +10,14 @@
 .card-inner {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   padding: 20px 0 15px;
-  margin: 10px;
+  /* margin: 10px; */
   /* background-color: white; */
   text-align: center;
+  width: 100%;
+  height: 100%;
+
 }
 
 
@@ -28,4 +31,10 @@
   height: 320px;
   margin: 20px auto 10px;
 
+}
+
+.card-inner-cart {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
 }

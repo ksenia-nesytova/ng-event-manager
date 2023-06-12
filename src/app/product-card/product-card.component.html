@@ -1,5 +1,6 @@
 <div class="card column" [ngClass]="{'card-in-cart': isCart}">
   <div class="card-inner">
+  <div class="card-inner" [ngClass]="{'card-inner-cart': isCart}">
     <button *ngIf="isCart" (click)="removeFromCart(product)">xxx</button>
     <img src="../assets/product/listing-image.png" alt="img">
     <h3>{{product.title}}</h3>
