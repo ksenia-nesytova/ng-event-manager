@@ -11,17 +11,27 @@ import { CartService } from '../cart.service';
 export class ProductCardComponent {
   @Input() product!:Product;
   @Input() isCart:boolean = false;
+  addedToCart:boolean = false;
 
-  constructor(private cartService: CartService) { }
+  constructor(public cartService: CartService) { }
 
   addToCart(product:Product):void {
+    this.addedToCart = true;
     this.cartService.addToCart(product);
   }
   removeFromCart(product:Product):void {
     this.cartService.removeFromCart(product);
   }
+
+  removeOneFromCart(product:Product) {
+    this.cartService.removeOneFromCart(product);
+    if(this.getItemQuantity(product) == 0) {
+      this.addedToCart = false;
+    }
+  }
+
   getItemQuantity(product:Product) {
-    this.cartService.getItemQuantity(product);
+    return this.cartService.getItemQuantity(product);
   }
 
 }
