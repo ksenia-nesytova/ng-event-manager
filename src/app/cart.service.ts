@@ -22,6 +22,17 @@ export class CartService {
        }
      }
 
+    removeOneFromCart(product:Product): void {
+      const index = this.items.findIndex(item => item.id === product.id);
+      if(index > -1 && this.items[index].quantity! > 0) {
+        this.items[index].quantity!--;
+      } else {
+        console.log('No such item in cart')
+         return;
+      }
+    }
+
+
      getItems(): Product[] {
        return this.items;
      }
