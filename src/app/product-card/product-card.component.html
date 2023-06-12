@@ -1,15 +1,17 @@
-<div class="card column" [ngClass]="{'card-in-cart': isCart}">
-  <div class="card-inner">
+<div class="column card" [ngClass]="{'card-in-cart': isCart}">
   <div class="card-inner" [ngClass]="{'card-inner-cart': isCart}">
-    <button *ngIf="isCart" (click)="removeFromCart(product)">xxx</button>
-    <img src="../assets/product/listing-image.png" alt="img">
-    <h3>{{product.title}}</h3>
-    <p>{{product.description}}</p>
-    <p>Sold by: {{product.vendor}}</p>
-   <button *ngIf="!isCart" type="button" (click)=addToCart(product) class="button-default button-primary">Add to Cart</button>
-      <!--  <button *ngIf="isCart" type="button" (click)=removeFromCart(product) class="button-default button-primary">Remove from Cart</button> -->
-    <!-- <div *ngIf="!isCart" class="">
-      <button type="button">-</button><span>{{getItemQuantity(product)}}</span><button type="button">+</button>
-    </div> -->
+    <!-- <button *ngIf="isCart" (click)="removeFromCart(product)">xxx</button> -->
+    <!-- <img src="../assets/product/listing-image.png" alt="img"> -->
+    <img src="../assets/product/houseplant.jpg" alt="img">
+    <div class="column card-info-wrapper">
+      <h3>{{product.title}}</h3>
+      <!-- <p>{{product.description}}</p> -->
+      <!-- <p>Sold by: {{product.vendor}}</p> -->
+     <button *ngIf="!isCart" type="button" (click)=addToCart(product) class="button-default button-primary">Add to Cart</button>
+        <!--  <button *ngIf="isCart" type="button" (click)=removeFromCart(product) class="button-default button-primary">Remove from Cart</button> -->
+      <!-- <div *ngIf="!isCart" class="">
+        <button type="button">-</button><span>{{getItemQuantity(product)}}</span><button type="button">+</button>
+      </div> -->
+    </div>
   </div>
 </div>
