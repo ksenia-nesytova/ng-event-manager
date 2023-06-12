@@ -8,12 +8,11 @@
       <!-- <p>{{product.description}}</p> -->
       <!-- <p>Sold by: {{product.vendor}}</p> -->
      <button *ngIf="!isCart && !addedToCart" type="button" (click)=addToCart(product) class="button-default button-primary">Add to Cart</button>
-     <ng-container *ngIf="addedToCart">
-       <button  type="button" (click)=removeOneFromCart(product)>-</button>
+     <div *ngIf="addedToCart" class="row card-btns-wrapper">
+       <button type="button" class="button-default" (click)=removeOneFromCart(product)>-</button>
        <span>{{getItemQuantity(product)}}</span>
-       <button type="button" (click)=addToCart(product)>+</button>
-     </ng-container>
-
+       <button type="button" class="button-default" (click)=addToCart(product)>+</button>
+     </div>
         <!--  <button *ngIf="isCart" type="button" (click)=removeFromCart(product) class="button-default button-primary">Remove from Cart</button> -->
     </div>
   </div>

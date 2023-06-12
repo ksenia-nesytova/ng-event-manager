@@ -53,3 +53,8 @@
 .card-inner-cart > .card-info-wrapper {
   justify-content: flex-end;
 }
+
+.card-btns-wrapper {
+  align-items: center;
+  justify-content: space-between;
+}
