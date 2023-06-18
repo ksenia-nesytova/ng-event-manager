@@ -12,14 +12,17 @@ export class ProductListingComponent {
    products: Product[] = [
      {
     id: 632910392,
-    title: "Smarthphone - 32GB",
+    title: "Smartphone - 32GB",
     description: "A thing for making phone calls",
     vendor: "Eggplant",
+    color: "blue",
+
   }, {
     id: 1,
     title: "A Kidney",
     description: "It's an internal organ",
     vendor: "BlackMarketInc",
+    size: "XL"
   },
   {
     id: 2,
