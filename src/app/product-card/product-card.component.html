@@ -15,7 +15,8 @@
        <span>{{getItemQuantity(product)}}</span>
        <button type="button" class="button-default" (click)=addToCart(product)>+</button>
      </div>
-        <!--  <button *ngIf="isCart" type="button" (click)=removeFromCart(product) class="button-default button-primary">Remove from Cart</button> -->
+         <a *ngIf="isCart" (click)=removeFromCart(product)>Remove from Cart</a>
+         <a *ngIf="isCart" (click)=addToFavorites(product)>Move to favorites</a>
     </div>
   </div>
 </div>
