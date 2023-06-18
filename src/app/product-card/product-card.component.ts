@@ -30,6 +30,10 @@ export class ProductCardComponent {
     }
   }
 
+  addToFavorites(product:Product) {
+    console.log('added')
+  }
+
   getItemQuantity(product:Product) {
     return this.cartService.getItemQuantity(product);
   }
