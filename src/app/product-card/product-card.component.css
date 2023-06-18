@@ -23,6 +23,7 @@
   margin-top: 1em;
   /* justify-content: space-between; */
   justify-content: flex-end;
+  width: 100%;
 }
 
 .card-info-wrapper > h3 {
@@ -30,6 +31,11 @@
 }
 
 /* styles for cards inside cart */
+.card-actions-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
 .card-in-cart {
   border: 1px solid black;
   border-width: 0.5px 1px;
