@@ -7,6 +7,8 @@
       <h3>{{product.title}}</h3>
       <!-- <p>{{product.description}}</p> -->
       <!-- <p>Sold by: {{product.vendor}}</p> -->
+      <p *ngIf="product.color && isCart">Color: {{product.color}}</p>
+      <p *ngIf="product.size && isCart">Size: {{product.size}}</p>
      <button *ngIf="!isCart && !addedToCart" type="button" (click)=addToCart(product) class="button-default button-primary">Add to Cart</button>
      <div *ngIf="addedToCart" class="row card-btns-wrapper">
        <button type="button" class="button-default" (click)=removeOneFromCart(product)>-</button>
