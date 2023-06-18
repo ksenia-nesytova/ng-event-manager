@@ -71,3 +71,8 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.product-detail {
+  /* padding-righ && padding-left equal to btn-default */
+  padding: 0 1em; 
+}

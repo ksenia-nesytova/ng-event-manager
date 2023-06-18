@@ -4,11 +4,14 @@
     <!-- <img src="../assets/product/listing-image.png" alt="img"> -->
     <img src="../assets/product/houseplant.jpg" alt="img">
     <div class="column card-info-wrapper">
-      <h3>{{product.title}}</h3>
+      <h3 [ngClass]="{'product-detail': isCart}">{{product.title}}</h3>
       <!-- <p>{{product.description}}</p> -->
       <!-- <p>Sold by: {{product.vendor}}</p> -->
-      <p *ngIf="product.color && isCart">Color: {{product.color}}</p>
-      <p *ngIf="product.size && isCart">Size: {{product.size}}</p>
+      <div *ngIf="isCart" class="card-details-wrapper">
+        <p *ngIf="product.color && isCart" class="product-detail">Color: {{product.color}}</p>
+        <p *ngIf="product.size && isCart" class="product-detail">Size: {{product.size}}</p>
+      </div>
+
        <button *ngIf="!isCart && !addedToCart" type="button" (click)=addToCart(product) class="btn-default">Add to Cart</button>
        <div *ngIf="addedToCart" class="row card-btns-wrapper">
          <button type="button" class="btn-default" (click)=removeOneFromCart(product)>-</button>
