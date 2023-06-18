@@ -34,6 +34,7 @@
 .card-actions-wrapper {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .card-actions-wrapper .btn-link:not(:last-of-type) {
@@ -74,5 +75,5 @@
 
 .product-detail {
   /* padding-righ && padding-left equal to btn-default */
-  padding: 0 1em; 
+  padding-left: 1em;
 }
