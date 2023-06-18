@@ -36,7 +36,9 @@
   min-width: 620px;
   max-width: 620px;
   overflow: hidden;
-  height: 320px;
+  /* height: 320px; */
+  height: 250px;
+  min-height: 250px;
   margin: 20px auto 10px;
 }
 
@@ -44,6 +46,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+  text-align: left;
 }
 
 .card-inner-cart > img {
@@ -51,7 +54,7 @@
 }
 
 .card-inner-cart > .card-info-wrapper {
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .card-btns-wrapper {
