@@ -4,9 +4,15 @@ export interface Product {
   description: string,
   vendor: string,
   quantity?: number,
+  color?: string,
+  size?: string,
 }
 
 
-// export interface ProductInCart extends Product {
-//   quantity: number
+// export interface ClothingItem extends Product {
+//   size: number
+// }
+
+// export interface ClothingItem extends Product {
+//   size: number
 // }
