@@ -46,7 +46,7 @@ li {
   background-color: #f54242;
 }
 
-.button-default {
+.btn-default {
   border: 0;
   /* border-radius: 100vmax; */
   border-radius: 8px;
@@ -54,9 +54,9 @@ li {
   background-color: yellow;
 }
 
-.button-default:hover,
-.button-default:focus,
-.button-default:active {
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active {
   background-color: #042fee;
 
 }
