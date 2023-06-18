@@ -9,14 +9,16 @@
       <!-- <p>Sold by: {{product.vendor}}</p> -->
       <p *ngIf="product.color && isCart">Color: {{product.color}}</p>
       <p *ngIf="product.size && isCart">Size: {{product.size}}</p>
-     <button *ngIf="!isCart && !addedToCart" type="button" (click)=addToCart(product) class="btn-default btn-primary">Add to Cart</button>
-     <div *ngIf="addedToCart" class="row card-btns-wrapper">
-       <button type="button" class="btn-default" (click)=removeOneFromCart(product)>-</button>
-       <span>{{getItemQuantity(product)}}</span>
-       <button type="button" class="btn-default" (click)=addToCart(product)>+</button>
-     </div>
-         <a *ngIf="isCart" class="btn-link" (click)=removeFromCart(product)>Remove from Cart</a>
-         <a *ngIf="isCart" class="btn-link" (click)=addToFavorites(product)>Move to favorites</a>
+       <button *ngIf="!isCart && !addedToCart" type="button" (click)=addToCart(product) class="btn-default">Add to Cart</button>
+       <div *ngIf="addedToCart" class="row card-btns-wrapper">
+         <button type="button" class="btn-default" (click)=removeOneFromCart(product)>-</button>
+         <span>{{getItemQuantity(product)}}</span>
+         <button type="button" class="btn-default" (click)=addToCart(product)>+</button>
+       </div>
+       <div class="card-actions-wrapper">
+           <button type="button" class="btn-default btn-link" *ngIf="isCart" (click)=removeFromCart(product)>Remove from Cart</button>
+           <button type="button" class="btn-default btn-link" *ngIf="isCart" (click)=addToFavorites(product)>Move to favorites</button>
+       </div>
     </div>
   </div>
 </div>
