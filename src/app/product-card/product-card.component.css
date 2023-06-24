@@ -77,3 +77,8 @@
   /* padding-righ && padding-left equal to btn-default */
   padding-left: 1em;
 }
+
+.favorite {
+  z-index: 4;
+  position: absolute;
+}

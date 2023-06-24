@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Product } from '../interfaces/Product';
 import { CartService } from '../cart.service';
+import { FavoritesService } from '../favorites.service';
 
 @Component({
   selector: 'app-product-card',
@@ -13,7 +14,10 @@ export class ProductCardComponent {
   @Input() isCart:boolean = false;
   addedToCart:boolean = false;
 
-  constructor(public cartService: CartService) { }
+  constructor(
+    public cartService: CartService,
+    public favsService: FavoritesService
+  ) { }
 
   addToCart(product:Product):void {
     this.addedToCart = true;
@@ -31,7 +35,8 @@ export class ProductCardComponent {
   }
 
   addToFavorites(product:Product) {
-    console.log('added')
+    this.favsService.addToFavorites(product)
+    console.log('added', product)
   }
 
   getItemQuantity(product:Product) {

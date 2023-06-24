@@ -3,6 +3,11 @@
     <!-- <button *ngIf="isCart" (click)="removeFromCart(product)">xxx</button> -->
     <!-- <img src="../assets/product/listing-image.png" alt="img"> -->
     <img src="../assets/product/houseplant.jpg" alt="img">
+
+    <div *ngIf="!addedToCart" class="favorite">
+      <button type="button" name="button" (click)=addToFavorites(product)>Favorite</button>
+    </div>
+
     <div class="column card-info-wrapper">
       <h3 [ngClass]="{'product-detail': isCart}">{{product.title}}</h3>
       <!-- <p>{{product.description}}</p> -->
