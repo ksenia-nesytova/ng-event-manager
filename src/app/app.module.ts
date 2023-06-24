@@ -10,6 +10,7 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductCardComponent } from './product-card/product-card.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
+import { FavoritesPageComponent } from './favorites-page/favorites-page.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SideNavComponent } from './side-nav/side-nav.component';
     ShoppingCartComponent,
     FooterComponent,
     ProductCardComponent,
-    SideNavComponent
+    SideNavComponent,
+    FavoritesPageComponent
   ],
   imports: [
     BrowserModule,
