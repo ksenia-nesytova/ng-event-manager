@@ -1,0 +1,12 @@
+.cart-wrapper {
+  justify-content: center;
+}
+
+/* temporary */
+.cart-inner {
+  width: 80%;
+}
+
+.cards-wrapper {
+  align-items: center;
+}

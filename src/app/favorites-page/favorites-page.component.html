@@ -1,0 +1,12 @@
+<div class="row cart-wrapper">
+  <div class="cart-inner">
+    <div class="column cards-wrapper" *ngIf="items.length > 0">
+      <h3>Items added to your favorites:</h3>
+      <app-product-card [isCart]="isCart" *ngFor="let product of items" [product] = "product"/>
+    </div>
+    <div class="column cards-wrapper" *ngIf="items.length == 0">
+      <h3>Nothing here yet</h3>
+      {{items}}
+    </div>
+  </div>
+</div>
